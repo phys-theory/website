@@ -1,7 +1,45 @@
 {
   "version": "4",
+  "specifiers": {
+    "npm:@chialab/esbuild-plugin-html@*": "0.18.2",
+    "npm:@chialab/esbuild-rna@*": "0.18.2"
+  },
+  "npm": {
+    "@chialab/esbuild-plugin-html@0.18.2": {
+      "integrity": "sha512-8dBqIZIL1tkLYyMko+HY8b80QoDOIGlydbIQO8ALLv4e59UO0MGQjFG3RCD0V5sMbpjeNrJ3MCKz29wGL16Wrg==",
+      "dependencies": [
+        "@chialab/esbuild-rna"
+      ]
+    },
+    "@chialab/esbuild-rna@0.18.2": {
+      "integrity": "sha512-ckzskez7bxstVQ4c5cxbx0DRP2teldzrcSGQl2KPh1VJGdO2ZmRrb6vNkBBD5K3dx9tgTyvskWp4dV+Fbg07Ag==",
+      "dependencies": [
+        "@chialab/estransform",
+        "@chialab/node-resolve"
+      ]
+    },
+    "@chialab/estransform@0.18.1": {
+      "integrity": "sha512-W/WmjpQL2hndD0/XfR0FcPBAUj+aLNeoAVehOjV/Q9bSnioz0GVSAXXhzp59S33ZynxJBBfn8DNiMTVNJmk4Aw==",
+      "dependencies": [
+        "@parcel/source-map"
+      ]
+    },
+    "@chialab/node-resolve@0.18.0": {
+      "integrity": "sha512-eV1m70Qn9pLY9xwFmZ2FlcOzwiaUywsJ7NB/ud8VB7DouvCQtIHkQ3Om7uPX0ojXGEG1LCyO96kZkvbNTxNu0Q=="
+    },
+    "@parcel/source-map@2.1.1": {
+      "integrity": "sha512-Ejx1P/mj+kMjQb8/y5XxDUn4reGdr+WyKYloBljpppUy8gs42T+BNoEOuRYqDVdgPc6NxduzIDoJS9pOFfV5Ew==",
+      "dependencies": [
+        "detect-libc"
+      ]
+    },
+    "detect-libc@1.0.3": {
+      "integrity": "sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg=="
+    }
+  },
   "redirects": {
     "https://deno.land/": "https://deno.com/",
+    "https://deno.land/x/": "https://deno.land/x",
     "https://deno.land/x/esbuild": "https://deno.land/x/esbuild@v0.24.2",
     "https://deno.land/x/esbuild/": "https://deno.land/x/esbuild",
     "https://deno.land/x/esbuild/mod": "https://deno.land/x/esbuild@v0.24.2/mod",
