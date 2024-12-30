@@ -10,6 +10,6 @@
 .env.local
 
 # Fresh build directory
-_fresh/
+/build/
 # npm dependencies
-node_modules/
+/node_modules/
